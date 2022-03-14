@@ -1,6 +1,10 @@
 # IoC Demo
 
-This represents scenario where your application is dependant on another service that is unreachable locally.
+Represents a scenario where your application is dependant on another service that is unreachable locally.
+
+With IoC you can bind the concrete implementation to a fake class that mimics the behaviour of the unreachable service.
+
+This way you can easily run the app locally and write tests.
 
 ### Install
 
@@ -14,7 +18,7 @@ yarn
 yarn test
 ```
 
-Tests are using fake classes.
+Uses fake classes.
 
 ### Run with fake classes
 
@@ -22,7 +26,7 @@ Tests are using fake classes.
 USE_FAKES=true yarn start
 ```
 
-Uses fake classes that mimic the unreachable service, so it will be easier to run the application locally.
+Uses fake classes.
 
 ### Run with real implementation
 
@@ -30,4 +34,4 @@ Uses fake classes that mimic the unreachable service, so it will be easier to ru
 yarn start
 ```
 
-Uses real implementation that is dependant on some service which is not reachable locally.
+Uses real implementation. Expected to fail locally.
