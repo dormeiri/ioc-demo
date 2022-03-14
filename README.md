@@ -4,7 +4,7 @@ Represents a scenario where your application is dependant on another service tha
 
 With IoC you can bind the concrete implementation to a fake class that mimics the behaviour of the unreachable service.
 
-This way you can easily run the app locally and write tests.
+_This way you can easily run the app locally and write tests._
 
 ### Install
 
@@ -34,4 +34,4 @@ Uses fake classes.
 yarn start
 ```
 
-Uses real implementation. Expected to fail locally.
+Uses real implementation. **Expected to fail locally!**
