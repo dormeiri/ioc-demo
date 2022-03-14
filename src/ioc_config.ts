@@ -12,7 +12,7 @@ export enum Type {
   SomeClient = 'SomeClient',
 }
 
-const useFakes = process.env.NODE_ENV === 'test';
+const useFakes = process.env.NODE_ENV === 'test' || process.env.USE_FAKES === 'true';
 
 container
     .bind<SomeClient>(Type.SomeClient)
